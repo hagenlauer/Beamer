@@ -1,0 +1,1556 @@
+@InProceedings{Mukhamedov2013,
+author="Mukhamedov, Aybek
+and Gordon, Andrew D.
+and Ryan, Mark",
+editor="Christianson, Bruce
+and Malcolm, James A.
+and Maty{\'a}{\v{s}}, Vashek
+and Roe, Michael",
+title="Towards a Verified Reference Implementation of a Trusted Platform Module",
+booktitle="Security Protocols XVII",
+year="2013",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="69--81",
+abstract="We develop a reference implementation for a fragment of the API for a Trusted Platform Module. Our code is written in a functional language, suitable for verification with various tools, but is automatically translated to a subset of C, suitable for interoperability testing with production code, and for inclusion in a specification or standard for the API. One version of our code corresponds to the widely deployed TPM 1.2 specification, and is vulnerable to a recently discovered dictionary attack; verification of secrecy properties of this version fails producing an attack trace and highlights an ambiguity in the specification that has security implications. Another version of our code corresponds to a suggested amendment to the TPM 1.2 specification; verification of this version succeeds. From this case study we conclude that recent advances in tools for verifying implementation code for cryptographic APIs are reaching the point where it is viable to develop verified reference implementations. Moreover, the published code can be in a widely understood language like C, rather than one of the specialist formalisms aimed at modelling cryptographic protocols.",
+isbn="978-3-642-36213-2"
+}
+
+
+@inproceedings{Gurgens2007,
+ author = {G\"{u}rgens, Sigrid and Rudolph, Carsten and Scheuermann, Dirk and Atts, Marion and Plaga, Rainer},
+ title = {Security Evaluation of Scenarios Based on the TCG's TPM Specification},
+ booktitle = {Proceedings of the 12th European Conference on Research in Computer Security},
+ series = {ESORICS'07},
+ year = {2007},
+ isbn = {3-540-74834-2, 978-3-540-74834-2},
+ location = {Dresden, Germany},
+ pages = {438--453},
+ numpages = {16},
+ url = {http://dl.acm.org/citation.cfm?id=2393847.2393887},
+ acmid = {2393887},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+} 
+
+@InProceedings{Bai2014,
+author="Bai, Guangdong
+and Hao, Jianan
+and Wu, Jianliang
+and Liu, Yang
+and Liang, Zhenkai
+and Martin, Andrew",
+editor="Jones, Cliff
+and Pihlajasaari, Pekka
+and Sun, Jun",
+title="TrustFound: Towards a Formal Foundation for Model Checking Trusted Computing Platforms",
+booktitle="FM 2014: Formal Methods",
+year="2014",
+publisher="Springer International Publishing",
+address="Cham",
+pages="110--126",
+abstract="Trusted computing relies on formally verified trusted computing platforms to achieve high security assurance. In practice, however, new platforms are often proposed without a comprehensive formal evaluation and explicitly defined underlying assumptions. In this work, we propose TRUSTFOUND, a formal foundation and framework for model checking trusted computing platforms. TRUSTFOUND includes a logic for formally modeling platforms, a model of trusted computing techniques and a broad spectrum of threat models. It can be used to check platforms on security properties (e.g., confidentiality and attestability) and uncover the implicit assumptions that must be satisfied to guarantee the security properties. In our experiments, TRUSTFOUND is used to encode and model check two trusted platforms. It has identified a total of six implicit assumptions and two severe previously-unknown logic flaws from them.",
+isbn="978-3-319-06410-9"
+}
+
+% Sanctum, SGX, secure co-processor, attested execution
+@inproceedings {Sanctum2016,
+author = {Victor Costan and Ilia Lebedev and Srinivas Devadas},
+title = {Sanctum: Minimal Hardware Extensions for Strong Software Isolation},
+booktitle = {25th {USENIX} Security Symposium ({USENIX} Security 16)},
+year = {2016},
+isbn = {978-1-931971-32-4},
+address = {Austin, TX},
+pages = {857--874},
+url = {https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/costan},
+publisher = {{USENIX} Association},
+}
+
+% Formal abstractiosn, SGX
+@InProceedings{Pass2017,
+author="Pass, Rafael
+and Shi, Elaine
+and Tram{\`e}r, Florian",
+editor="Coron, Jean-S{\'e}bastien
+and Nielsen, Jesper Buus",
+title="Formal Abstractions for Attested Execution Secure Processors",
+booktitle="Advances in Cryptology -- EUROCRYPT 2017",
+year="2017",
+publisher="Springer International Publishing",
+address="Cham",
+pages="260--289",
+abstract="Realistic secure processors, including those built for academic and commercial purposes, commonly realize an ``attested execution'' abstraction. Despite being the de facto standard for modern secure processors, the ``attested execution'' abstraction has not received adequate formal treatment. We provide formal abstractions for ``attested execution'' secure processors and rigorously explore its expressive power. Our explorations show both the expected and the surprising.",
+isbn="978-3-319-56620-7"
+}
+
+@misc{IntelSGX,
+  organization = {Intel},
+  title = {Intel Software Guard Extensions (SGX)},
+  howpublished = {\url{https://software.intel.com/en-us/sgx}},
+  note = {Accessed: 2018-10-31}
+}
+
+% Firmware TPM
+@inproceedings {Raj2016,
+author = {Himanshu Raj and Stefan Saroiu and Alec Wolman and Ronald Aigner and Jeremiah Cox and Paul England and Chris Fenner and Kinshuman Kinshumann and Jork Loeser and Dennis Mattoon and Magnus Nystrom and David Robinson and Rob Spiger and Stefan Thom and David Wooten},
+title = {fTPM: A Software-Only Implementation of a {TPM} Chip},
+booktitle = {25th {USENIX} Security Symposium ({USENIX} Security 16)},
+year = {2016},
+isbn = {978-1-931971-32-4},
+address = {Austin, TX},
+pages = {841--856},
+url = {https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/raj},
+publisher = {{USENIX} Association},
+}
+
+@misc{IBMSWTPM,
+  author = {Kenneth Goldman},
+  organization = {International Business Machines},
+  title = {IBM's Software TPM 2.0},
+  howpublished = {\url{https://sourceforge.net/projects/ibmswtpm2/}},
+  note = {Accessed: 2018-10-31},
+  year = {2018}
+}
+
+@inproceedings{Strasser2008,
+ author = {Strasser, Mario and Stamer, Heiko},
+ title = {A Software-Based Trusted Platform Module Emulator},
+ booktitle = {Proceedings of the 1st International Conference on Trusted Computing and Trust in Information Technologies: Trusted Computing - Challenges and Applications},
+ series = {Trust '08},
+ year = {2008},
+ isbn = {978-3-540-68978-2},
+ location = {Villach, Austria},
+ pages = {33--47},
+ numpages = {15},
+ url = {http://dx.doi.org/10.1007/978-3-540-68979-9_3},
+ doi = {10.1007/978-3-540-68979-9_3},
+ acmid = {1422933},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+} 
+
+@inproceedings{Berger2006,
+ author = {Berger, Stefan and C\'{a}ceres, Ram\'{o}n and Goldman, Kenneth A. and Perez, Ronald and Sailer, Reiner and van Doorn, Leendert},
+ title = {vTPM: Virtualizing the Trusted Platform Module},
+ booktitle = {Proceedings of the 15th Conference on USENIX Security Symposium - Volume 15},
+ series = {USENIX-SS'06},
+ year = {2006},
+ location = {Vancouver, B.C., Canada},
+ articleno = {21},
+ url = {http://dl.acm.org/citation.cfm?id=1267336.1267357},
+ acmid = {1267357},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+} 
+
+@inproceedings {Chen2014,
+author = {Chen Chen and Himanshu Raj and Stefan Saroiu and Alec Wolman},
+title = {cTPM: A Cloud {TPM} for Cross-Device Trusted Applications},
+booktitle = {11th {USENIX} Symposium on Networked Systems Design and Implementation ({NSDI} 14)},
+year = {2014},
+address = {Seattle, WA},
+url = {https://www.usenix.org/conference/nsdi14/technical-sessions/presentation/chen},
+publisher = {{USENIX} Association},
+}
+
+
+@inproceedings{England2008,
+ author = {England, Paul and Loeser, Jork},
+ title = {Para-Virtualized TPM Sharing},
+ booktitle = {Proceedings of the 1st International Conference on Trusted Computing and Trust in Information Technologies: Trusted Computing - Challenges and Applications},
+ series = {Trust '08},
+ year = {2008},
+ isbn = {978-3-540-68978-2},
+ location = {Villach, Austria},
+ pages = {119--132},
+ numpages = {14},
+ url = {http://dx.doi.org/10.1007/978-3-540-68979-9_9},
+ doi = {10.1007/978-3-540-68979-9_9},
+ acmid = {1422939},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+} 
+
+@inproceedings{Zhang2011,
+ author = {Zhang, Fengzhe and Chen, Jin and Chen, Haibo and Zang, Binyu},
+ title = {CloudVisor: Retrofitting Protection of Virtual Machines in Multi-tenant Cloud with Nested Virtualization},
+ booktitle = {Proceedings of the Twenty-Third ACM Symposium on Operating Systems Principles},
+ series = {SOSP '11},
+ year = {2011},
+ isbn = {978-1-4503-0977-6},
+ location = {Cascais, Portugal},
+ pages = {203--216},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/2043556.2043576},
+ doi = {10.1145/2043556.2043576},
+ acmid = {2043576},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {multi-tenant cloud, nested virtualization, virtual machine security},
+} 
+
+@INPROCEEDINGS{McCune2010, 
+author={J. M. McCune and Y. Li and N. Qu and Z. Zhou and A. Datta and V. Gligor and A. Perrig}, 
+booktitle={2010 IEEE Symposium on Security and Privacy}, 
+title={TrustVisor: Efficient TCB Reduction and Attestation}, 
+year={2010}, 
+volume={}, 
+number={}, 
+pages={143-158}, 
+keywords={data integrity;invasive software;operating systems (computers);software maintenance;legacy system;security-sensitive code block;malware;AMD;Intel;TrustVisor;code integrity;data integrity;legacy OS system;operating system;Hardware;Circuit testing;Computer security;Process design;Runtime;Costs;Logic;Algorithm design and analysis;Privacy;Arm;Trusted Computing;Integrity Measurement;Attestation;Minimal TCB;Virtualization;TPM}, 
+doi={10.1109/SP.2010.17}, 
+ISSN={2375-1207}, 
+month={May},}
+
+@InProceedings{Sadeghi2010,
+author="Sadeghi, Ahmad-Reza
+and Schneider, Thomas
+and Winandy, Marcel",
+editor="Acquisti, Alessandro
+and Smith, Sean W.
+and Sadeghi, Ahmad-Reza",
+title="Token-Based Cloud Computing",
+booktitle="Trust and Trustworthy Computing",
+year="2010",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="417--429",
+abstract="Secure outsourcing of computation to an untrusted (cloud) service provider is becoming more and more important. Pure cryptographic solutions based on fully homomorphic and verifiable encryption, recently proposed, are promising but suffer from very high latency. Other proposals perform the whole computation on tamper-proof hardware and usually suffer from the the same problem. Trusted computing (TC) is another promising approach that uses trusted software and hardware components on computing platforms to provide useful mechanisms such as attestation allowing the data owner to verify the integrity of the cloud and its computation. However, on the one hand these solutions require trust in hardware (CPU, trusted computing modules) that are under the physical control of the cloud provider, and on the other hand they still have to face the challenge of run-time attestation.",
+isbn="978-3-642-13869-0"
+}
+
+
+@inproceedings {Santos2012,
+author = {Nuno Santos and Rodrigo Rodrigues and Krishna P. Gummadi and Stefan Saroiu},
+title = {Policy-Sealed Data: A New Abstraction for Building Trusted Cloud Services },
+booktitle = {Presented as part of the 21st {USENIX} Security Symposium ({USENIX} Security 12)},
+year = {2012},
+isbn = {978-931971-95-9},
+address = {Bellevue, WA},
+pages = {175--188},
+url = {https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/santos},
+publisher = {{USENIX}},
+}
+
+% Verification, Formal, Hoare
+@article{Owicki1976,
+ author = {Owicki, Susan and Gries, David},
+ title = {An Axiomatic Proof Technique for Parallel Programs I},
+ journal = {Acta Inf.},
+ issue_date = {December  1976},
+ volume = {6},
+ number = {4},
+ month = dec,
+ year = {1976},
+ issn = {0001-5903},
+ pages = {319--340},
+ numpages = {22},
+ url = {http://dx.doi.org/10.1007/BF00268134},
+ doi = {10.1007/BF00268134},
+ acmid = {2697004},
+ publisher = {Springer-Verlag New York, Inc.},
+ address = {Secaucus, NJ, USA},
+} 
+
+% Privacy ML
+@inproceedings{Bonawitz2017,
+ author = {Bonawitz, Keith and Ivanov, Vladimir and Kreuter, Ben and Marcedone, Antonio and McMahan, H. Brendan and Patel, Sarvar and Ramage, Daniel and Segal, Aaron and Seth, Karn},
+ title = {Practical Secure Aggregation for Privacy-Preserving Machine Learning},
+ booktitle = {Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security},
+ series = {CCS '17},
+ year = {2017},
+ isbn = {978-1-4503-4946-8},
+ location = {Dallas, Texas, USA},
+ pages = {1175--1191},
+ numpages = {17},
+ url = {http://doi.acm.org/10.1145/3133956.3133982},
+ doi = {10.1145/3133956.3133982},
+ acmid = {3133982},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {federated learning, machine learning, privacy-preserving protocols, secure aggregation},
+} 
+
+@inproceedings{FederatedLearning,
+  title={Communication-Efficient Learning of Deep Networks from Decentralized Data},
+  author={H. Brendan McMahan and Eider Moore and Daniel Ramage and Seth Hampson and Blaise Ag{\"u}era y Arcas},
+  booktitle={AISTATS},
+  year={2017}
+}
+
+% Verifiable Execution of Deep Neural Networks
+@incollection{SafetyNets,
+title = {SafetyNets: Verifiable Execution of Deep Neural Networks on an Untrusted Cloud},
+author = {Ghodsi, Zahra and Gu, Tianyu and Garg, Siddharth},
+booktitle = {Advances in Neural Information Processing Systems 30},
+editor = {I. Guyon and U. V. Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+pages = {4672--4681},
+year = {2017},
+publisher = {Curran Associates, Inc.},
+}
+
+% AI system challenges
+@article{preprint:AIsystemchallenges,
+  author    = {Ion Stoica and
+               Dawn Song and
+               Raluca Ada Popa and
+               David A. Patterson and
+               Michael W. Mahoney and
+               Randy H. Katz and
+               Anthony D. Joseph and
+               Michael I. Jordan and
+               Joseph M. Hellerstein and
+               Joseph E. Gonzalez and
+               Ken Goldberg and
+               Ali Ghodsi and
+               David Culler and
+               Pieter Abbeel},
+  title     = {A Berkeley View of Systems Challenges for {AI}},
+  journal   = {CoRR},
+  volume    = {abs/1712.05855},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1712.05855},
+  archivePrefix = {arXiv},
+  eprint    = {1712.05855},
+  timestamp = {Mon, 13 Aug 2018 16:47:45 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1712-05855},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+maintained by Schloss Dagstuhl LZI at University of Trier homebrowsesearchabout
+
+
+@inproceedings{x86rings,
+ author = {Lee, Hojoon and Song, Chihyun and Kang, Brent Byunghoon},
+ title = {Lord of the x86 Rings: A Portable User Mode Privilege Separation Architecture on x86},
+ booktitle = {Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security},
+ series = {CCS '18},
+ year = {2018},
+ isbn = {978-1-4503-5693-0},
+ location = {Toronto, Canada},
+ pages = {1441--1454},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/3243734.3243748},
+ doi = {10.1145/3243734.3243748},
+ acmid = {3243748},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {memory protection, operating system, privilege separation},
+} 
+
+@article{Allen1983,
+ author = {Allen, James F.},
+ title = {Maintaining Knowledge About Temporal Intervals},
+ journal = {Commun. ACM},
+ issue_date = {Nov. 1983},
+ volume = {26},
+ number = {11},
+ month = nov,
+ year = {1983},
+ issn = {0001-0782},
+ pages = {832--843},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/182.358434},
+ doi = {10.1145/182.358434},
+ acmid = {358434},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {interval reasoning, interval representation, temporal interval},
+} 
+
+@article{Allen1984,
+author = "Allen, James F.",
+title = "Towards a general theory of action and time",
+journal = "Artificial Intelligence",
+volume = "23",
+number = "2",
+pages = "123 - 154",
+year = "1984",
+issn = "0004-3702",
+doi = "https://doi.org/10.1016/0004-3702(84)90008-0",
+url = "http://www.sciencedirect.com/science/article/pii/0004370284900080"
+}
+
+@INPROCEEDINGS{Allen1989,
+    author = {James F. Allen and Patrick J. Hayes},
+    title = {Moments and Points in an Interval-Based Temporal Logic},
+    booktitle = {Contexts in context. In Contexts in Knowledge Representation and Natural Language, Proceedings of the 1997 AAAI Spring Symposium, Menlo Park, Calif},
+    year = {1989},
+    pages = {225--238},
+    publisher = {AAAI Press}
+}
+
+@ARTICLE{Allen1994,
+    author = {James F. Allen and George Ferguson},
+    title = {Actions and Events in Interval Temporal Logic},
+    journal = {Journal of Logic and Computation},
+    year = {1994},
+    volume = {4},
+    pages = {531--579}
+}
+
+@inproceedings{reductionsemantics,
+ author = {Matthias Felleisen and Daniel P. Friedman
+    and Eugene E. Kohlbecker and Bruce F. Duba},
+ title = {Reasoning with continuations},
+ booktitle = {Proc. First Symposium on Logic
+    in Computer Science},
+ year = {1986},
+ month = {June},
+ pages = {131--141},
+}
+
+@article{reductionsemantics2,
+ author = "Matthias Felleisen and Robert Hieb",
+ title = "The revised report on the syntactic theories of
+   sequential control and state",
+ booktitle= "Theoretical Computer Science",
+ volume = {103},
+ number = {2},
+ year = "1992",
+ pages="235--271"
+}
+
+@book{Milner1997,
+ author = {Milner, Robin and Tofte, Mads and Macqueen, David},
+ title = {The  Definition of Standard ML},
+ year = {1997},
+ isbn = {0262631814},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA},
+} 
+
+@book{PICal,
+  author    = {Robin Milner},
+  title     = {Communicating and mobile systems - the Pi-calculus},
+  publisher = {Cambridge University Press},
+  year      = {1999},
+  isbn      = {978-0-521-65869-0},
+  timestamp = {Wed, 20 Apr 2011 20:17:03 +0200},
+  biburl    = {https://dblp.org/rec/bib/books/daglib/0098267},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@book{CCS,
+  author    = {Robin Milner},
+  title     = {A Calculus of Communicating Systems},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {92},
+  publisher = {Springer},
+  year      = {1980},
+  url       = {https://doi.org/10.1007/3-540-10235-3},
+  doi       = {10.1007/3-540-10235-3},
+  isbn      = {3-540-10235-3},
+  timestamp = {Tue, 16 May 2017 14:01:44 +0200},
+  biburl    = {https://dblp.org/rec/bib/books/sp/Milner80},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@book{Brauner2011,
+ author = {Thorben Bra\"uner},
+ title = {Hybrid Logic and its Proof-Theory},
+ year = {2011},
+ isbn = {978-94-007-0002-4},
+ doi = {https://doi.org/10.1007/978-94-007-0002-4},
+ publisher = {Springer-Verlag},
+ address = {Dordecht, Germany}
+}
+
+@ARTICLE{Blackburn2000, 
+author={P. Blackburn}, 
+journal={Logic Journal of the IGPL}, 
+title={Representation, reasoning, and relational structures: a hybrid logic manifesto}, 
+year={2000}, 
+volume={8}, 
+number={3}, 
+pages={339-365}, 
+keywords={Labelled deduction;description logic;feature logic;hybrid logic;modal logic;sorted modal logic;temporal logic;nominals;knowledge representation;relational structures}, 
+doi={10.1093/jigpal/8.3.339}, 
+ISSN={1367-0751}, 
+month={May},}
+
+@Article{Blackburn2006,
+author="Blackburn, P.
+and Cate, B. ten",
+title="Pure Extensions, Proof Rules, and Hybrid Axiomatics",
+journal="Studia Logica",
+year="2006",
+month="Nov",
+day="01",
+volume="84",
+number="2",
+pages="277--322",
+abstract="In this paper we argue that hybrid logic is the deductive setting most natural for Kripke semantics. We do so by investigating hybrid axiomatics for a variety of systems, ranging from the basic hybrid language (a decidable system with the same complexity as orthodox propositional modal logic) to the strong Priorean language (which offers full first-order expressivity).",
+issn="1572-8730",
+doi="10.1007/s11225-006-9009-6",
+url="https://doi.org/10.1007/s11225-006-9009-6"
+}
+
+@article{Gentzen1935,
+author = {Gentzen, G.},
+journal = {Mathematische Zeitschrift},
+keywords = {foundations, philosophy, logic},
+pages = {176-210},
+title = {Untersuchungen \"uber das logische Schliessen I},
+url = {http://eudml.org/doc/168546},
+volume = {39},
+year = {1935},
+}
+
+@InProceedings{attestedexecution,
+author="Pass, Rafael and Shi, Elaine and Tram{\`e}r, Florian",
+editor="Coron, Jean-S{\'e}bastien and Nielsen, Jesper Buus",
+title="Formal Abstractions for Attested Execution Secure Processors",
+booktitle="Advances in Cryptology -- EUROCRYPT 2017",
+year="2017",
+publisher="Springer International Publishing",
+address="Cham",
+pages="260--289",
+abstract="Realistic secure processors, including those built for academic and commercial purposes, commonly realize an ``attested execution'' abstraction. Despite being the de facto standard for modern secure processors, the ``attested execution'' abstraction has not received adequate formal treatment. We provide formal abstractions for ``attested execution'' secure processors and rigorously explore its expressive power. Our explorations show both the expected and the surprising.",
+isbn="978-3-319-56620-7"
+}
+
+@INPROCEEDINGS{UCFramework, 
+author={R. Canetti}, 
+booktitle={Proceedings 2001 IEEE International Conference on Cluster Computing}, 
+title={Universally composable security: a new paradigm for cryptographic protocols}, 
+year={2001}, 
+volume={}, 
+number={}, 
+pages={136-145}, 
+keywords={bibliographies;computability;cryptography;message authentication;protocols;Internet;adversarially controlled execution;arbitrary protocols;arbitrary system;authenticated communication;complex unpredictable environments;concurrent composition;cryptographic protocol paradigm;cryptographic task;key-exchange;non-malleability;oblivious transfer;public-key encryption;secure communication;secure protocol;universally composable definitions;universally composable security;zero knowledge;Application software;Computer science;Computer security;Cryptographic protocols;Cryptography;Job design;Mathematical model;Radio access networks;Reactive power}, 
+doi={10.1109/SFCS.2001.959888}, 
+ISSN={}, 
+month={Oct},}
+
+@inproceedings{PCLerrors,
+ author = {Cremers, Cas},
+ title = {On the Protocol Composition Logic PCL},
+ booktitle = {Proceedings of the 2008 ACM Symposium on Information, Computer and Communications Security},
+ series = {ASIACCS '08},
+ year = {2008},
+ isbn = {978-1-59593-979-1},
+ location = {Tokyo, Japan},
+ pages = {66--76},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/1368310.1368324},
+ doi = {10.1145/1368310.1368324},
+ acmid = {1368324},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {composition, logic, security protocol analysis},
+} 
+
+@article{PCL2007,
+ author = {Datta, Anupam and Derek, Ante and Mitchell, John C. and Roy, Arnab},
+ title = {Protocol Composition Logic (PCL)},
+ journal = {Electron. Notes Theor. Comput. Sci.},
+ issue_date = {April, 2007},
+ volume = {172},
+ month = apr,
+ year = {2007},
+ issn = {1571-0661},
+ pages = {311--358},
+ numpages = {48},
+ url = {http://dx.doi.org/10.1016/j.entcs.2007.02.012},
+ doi = {10.1016/j.entcs.2007.02.012},
+ acmid = {1230587},
+ publisher = {Elsevier Science Publishers B. V.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+ keywords = {Security protocol analysis, composition, logic},
+} 
+
+@article{Lansing16,
+ author = {Lansing, Jens and Sunyaev, Ali},
+ title = {Trust in Cloud Computing: Conceptual Typology and Trust-Building Antecedents},
+ journal = {SIGMIS Database},
+ issue_date = {May 2016},
+ volume = {47},
+ number = {2},
+ month = jun,
+ year = {2016},
+ issn = {0095-0033},
+ pages = {58--96},
+ numpages = {39},
+ url = {http://doi.acm.org/10.1145/2963175.2963179},
+ doi = {10.1145/2963175.2963179},
+ acmid = {2963179},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {cloud computing, conceptual, it artifact, it outsourcing, trust},
+} 
+
+@INPROCEEDINGS{Datta2009, 
+author={A. Datta and J. Franklin and D. Garg and D. Kaynar}, 
+booktitle={2009 30th IEEE Symposium on Security and Privacy}, 
+title={A Logic of Secure Systems and its Application to Trusted Computing}, 
+year={2009}, 
+volume={}, 
+number={}, 
+pages={221-236}, 
+keywords={authorisation;cryptography;programming languages;protocols;reasoning about programs;CSI -ADVERSARY;access control;concurrent programming language;cryptographic operations;machine resets;network communication;reasoning about programs;remote attestation protocols;secure systems;shared memory;trusted computing;Access control;Computer applications;Computer languages;Cryptography;Logic programming;Protocols;Read-write memory;Security;Virtual machine monitors;Yarn;Formal Reasoning;Logic of Secure Systems;Remote Attestation;Trusted Computing}, 
+doi={10.1109/SP.2009.16}, 
+ISSN={1081-6011}, 
+month={May},}
+
+@techreport{LSSreport,
+author={A. Datta and J. Franklin and D. Garg and D. Kaynar}, 
+institution="Carnegie Mellon University",
+title="A logic of secure systems and its application to trusted computing",
+number="Tech. Rep. CMU-CyLab-09- 001",
+year="2009",
+type="Technical Report"
+}
+
+@article{Parno2010,
+  title={Bootstrapping Trust in Commodity Computers},
+  author={Bryan Parno and Jonathan M. McCune and Adrian Perrig},
+  journal={2010 IEEE Symposium on Security and Privacy},
+  year={2010},
+  pages={414-429}
+}
+
+@book{Parno2011,
+ author = {Parno, Bryan and McCune, Jonathan M. and Perrig, Adrian},
+ title = {Bootstrapping Trust in Modern Computers},
+ year = {2011},
+ isbn = {1461414598, 9781461414599},
+ edition = {1st},
+ publisher = {Springer Publishing Company, Incorporated},
+} 
+
+@article{McCune2008,
+ author = {McCune, Jonathan M. and Parno, Bryan J. and Perrig, Adrian and Reiter, Michael K. and Isozaki, Hiroshi},
+ title = {Flicker: An Execution Infrastructure for Tcb Minimization},
+ journal = {SIGOPS Oper. Syst. Rev.},
+ issue_date = {May 2008},
+ volume = {42},
+ number = {4},
+ month = apr,
+ year = {2008},
+ issn = {0163-5980},
+ pages = {315--328},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/1357010.1352625},
+ doi = {10.1145/1357010.1352625},
+ acmid = {1352625},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {late launch, secure execution, trusted computing},
+} 
+
+@inproceedings{Gasser1989,
+author = {Gasser, Morrie and Goldstein, Andy and Kaufman, Charlie and Lampson, Butler},
+title = {The Digital Distributed System Security Architecture},
+booktitle = {National Computer Security Conf., NIST/NCSC, Baltimore},
+year = {1989},
+month = {January},
+publisher = {National Institute of Standards and Technology},
+address = {},
+pages = {305-319},
+journal = {},
+volume = {12},
+chapter = {},
+isbn = {},
+}
+
+@article{Thompson,
+ author = {Thompson, Ken},
+ title = {Reflections on Trusting Trust},
+ journal = {Commun. ACM},
+ issue_date = {Aug 1984},
+ volume = {27},
+ number = {8},
+ month = aug,
+ year = {1984},
+ issn = {0001-0782},
+ pages = {761--763},
+ numpages = {3},
+ url = {http://doi.acm.org/10.1145/358198.358210},
+ doi = {10.1145/358198.358210},
+ acmid = {358210},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@article{Lampson,
+ author = {Lampson, Butler W.},
+ title = {A Note on the Confinement Problem},
+ journal = {Commun. ACM},
+ issue_date = {Oct. 1973},
+ volume = {16},
+ number = {10},
+ month = oct,
+ year = {1973},
+ issn = {0001-0782},
+ pages = {613--615},
+ numpages = {3},
+ url = {http://doi.acm.org/10.1145/362375.362389},
+ doi = {10.1145/362375.362389},
+ acmid = {362389},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {confinement, leakage of data, privacy, proprietary program, protection, security},
+} 
+
+
+@incollection{Dijkstra1979,
+ author = {Dijkstra, Edsger Wybe},
+ title= {Programming Considered as a Human Activity},
+ booktitle = {Classics in Software Engineering},
+ editor = {Yourdon, Edward Nash},
+ year = {1979},
+ isbn = {0-917072-14-6},
+ pages = {1--9},
+ numpages = {9},
+ url = {http://dl.acm.org/citation.cfm?id=1241515.1241516},
+ acmid = {1241516},
+ publisher = {Yourdon Press},
+ address = {Upper Saddle River, NJ, USA},
+} 
+
+@inproceedings{computationalism,
+  title={Is there any Real Substance to the Claims for a 'New Computationalism'?},
+  author={Alberto Hern{\'a}ndez-Espinosa and Francisco Hern{\'a}ndez Quiroz and Hector Zenil},
+  booktitle={CiE},
+  year={2017}
+}
+
+@book{Dijkstra1997,
+ author = {Dijkstra, Edsger Wybe},
+ title = {A  Discipline of Programming},
+ year = {1997},
+ isbn = {013215871X},
+ edition = {1st},
+ publisher = {Prentice Hall PTR},
+ address = {Upper Saddle River, NJ, USA},
+} 
+
+@article{Hewitt2013,
+  title={What is computation? Actor model versus turing’s model},
+  author={Carl Hewitt},
+  journal={A Computable Universe, Understanding Computation and Exploring Nature as Computation. World Scientific Publishing Company/Imperial College Press, Singapore (2013)},
+  year={2013}
+}
+
+@inproceedings{Hewitt1973,
+  title={Session 8 Formalisms for Artificial Intelligence A Universal Modular ACTOR Formalism for Artificial Intelligence},
+  author={Hewitt, Carl and Bishop, Peter and Steiger, Richard},
+  booktitle={Advance Papers of the Conference},
+  volume=3,
+  pages=235,
+  year=1973,
+  organization={Stanford Research Institute}
+}
+
+@article{Hewitt1977,
+  title={Viewing control structures as patterns of passing messages},
+  author={Hewitt, Carl},
+  journal={Artificial intelligence},
+  volume=8,
+  number=3,
+  pages={323--364},
+  year=1977,
+  publisher={Elsevier}
+}
+
+@article{Agha2014,
+  title = {Actors Programming for the Mobile Cloud},
+  author = {Gul A. Agha},
+  journal = {2014 IEEE 13th International Symposium on Parallel and Distributed Computing},
+  year = {2014},
+  pages = {3-9}
+}
+
+@inproceedings{Ricci2011,
+ author = {Ricci, Alessandro and Bordini, Rafael H. and Agha, Gul},
+ title = {AGERE! (Actors and Agents Reloaded): Splash 2011 Workshop on Programming Systems, Languages and Applications Based on Actors, Agents and Decentralized Control},
+ booktitle = {Proceedings of the ACM International Conference Companion on Object Oriented Programming Systems Languages and Applications Companion},
+ series = {OOPSLA '11},
+ year = {2011},
+ isbn = {978-1-4503-0942-4},
+ location = {Portland, Oregon, USA},
+ pages = {325--326},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/2048147.2048231},
+ doi = {10.1145/2048147.2048231},
+ acmid = {2048231},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {actor-oriented programming, agent-oriented programming},
+} 
+
+@book{Bernstein1987,
+ author = {Bernstein, Philip A. and Hadzilacos, Vassco and Goodman, Nathan},
+ title = {Concurrency Control and Recovery in Database Systems},
+ year = {1987},
+ isbn = {0-201-10715-5},
+ publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+ address = {Boston, MA, USA},
+} 
+
+@inproceedings{Richardson2003,
+ author = {Richardson, Matthew and Agrawal, Rakesh and Domingos, Pedro},
+ title = {Trust Management for the Semantic Web},
+ booktitle = {Proceedings of the Second International Conference on Semantic Web Conference},
+ series = {LNCS-ISWC'03},
+ year = {2003},
+ isbn = {978-3-540-20362-9},
+ location = {Sanibel Island, FL},
+ pages = {351--368},
+ numpages = {18},
+ url = {http://dx.doi.org/10.1007/978-3-540-39718-2_23},
+ doi = {10.1007/978-3-540-39718-2_23},
+ acmid = {3000442},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+} 
+
+@inproceedings{Huang2006,
+  title={An ontology of trust: formal semantics and transitivity},
+  author={Jingwei Huang and Mark S. Fox},
+  booktitle={ICEC},
+  year={2006}
+}
+
+@inproceedings{Beth1994,
+ author = {Beth, Thomas and Borcherding, Malte and Klein, Birgit},
+ title = {Valuation of Trust in Open Networks},
+ booktitle = {Proceedings of the Third European Symposium on Research in Computer Security},
+ series = {ESORICS '94},
+ year = {1994},
+ isbn = {3-540-58618-0},
+ pages = {3--18},
+ numpages = {16},
+ url = {http://dl.acm.org/citation.cfm?id=646645.699041},
+ acmid = {699041},
+ publisher = {Springer-Verlag},
+ address = {London, UK, UK},
+} 
+
+@ARTICLE{trustreputation, 
+author={L. Liu and W. Shi}, 
+journal={IEEE Internet Computing}, 
+title={Trust and Reputation Management}, 
+year={2010}, 
+volume={14}, 
+number={5}, 
+pages={10-13}, 
+keywords={Recommender systems;Social network services;Special issues and sections;Web and internet services;attack resilience;recommendations;reputation;social ratings;trust}, 
+doi={10.1109/MIC.2010.124}, 
+ISSN={1089-7801}, 
+month={Sept},}
+
+@article{trusttaxonomy,
+ author = {Marti, Sergio and Garcia-Molina, Hector},
+ title = {Taxonomy of Trust: Categorizing P2P Reputation Systems},
+ journal = {Comput. Netw.},
+ issue_date = {15 March 2006},
+ volume = {50},
+ number = {4},
+ month = mar,
+ year = {2006},
+ issn = {1389-1286},
+ pages = {472--484},
+ numpages = {13},
+ url = {http://dx.doi.org/10.1016/j.comnet.2005.07.011},
+ doi = {10.1016/j.comnet.2005.07.011},
+ acmid = {1139713},
+ publisher = {Elsevier North-Holland, Inc.},
+ address = {New York, NY, USA},
+ keywords = {peer-to-peer, reputation, security, trust},
+} 
+
+@inproceedings{Ruan2011,
+ author = {Ruan, Anbang and Martin, Andrew},
+ title = {RepCloud: Achieving Fine-grained Cloud TCB Attestation with Reputation Systems},
+ booktitle = {Proceedings of the Sixth ACM Workshop on Scalable Trusted Computing},
+ series = {STC '11},
+ year = {2011},
+ isbn = {978-1-4503-1001-7},
+ location = {Chicago, Illinois, USA},
+ pages = {3--14},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2046582.2046586},
+ doi = {10.1145/2046582.2046586},
+ acmid = {2046586},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {remote attestation, reputation system, trusted cloud},
+}
+
+
+@inproceedings{eigentrust,
+ author = {Kamvar, Sepandar D. and Schlosser, Mario T. and Garcia-Molina, Hector},
+ title = {The Eigentrust Algorithm for Reputation Management in P2P Networks},
+ booktitle = {Proceedings of the 12th International Conference on World Wide Web},
+ series = {WWW '03},
+ year = {2003},
+ isbn = {1-58113-680-3},
+ location = {Budapest, Hungary},
+ pages = {640--651},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/775152.775242},
+ doi = {10.1145/775152.775242},
+ acmid = {775242},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {distributed eigenvector computation, peer-to-peer, reputation},
+}
+
+@ARTICLE{formaltrustcalculus, 
+author={J. Huang and D. Nicol}, 
+journal={IEEE Internet Computing}, 
+title={A Formal-Semantics-Based Calculus of Trust}, 
+year={2010}, 
+volume={14}, 
+number={5}, 
+pages={38-46}, 
+keywords={Internet;data privacy;process algebra;public key cryptography;Internet-based distributed computing;decentralized public-key certification;formal semantic based calculus of trust;formal trust model;logic model;pretty good privacy system;trust decision-making;Calculus;Certification;Decision making;Dentistry;Grid computing;IP networks;Logic;Uncertainty;Web and internet services;Web services;semantics of trust;trust modeling;uncertainties in trust}, 
+doi={10.1109/MIC.2010.83}, 
+ISSN={1089-7801}, 
+month={Sept},}
+
+% Cloud, replication, game theory
+@inproceedings{Dong2017,
+ author = {Dong, Changyu and Wang, Yilei and Aldweesh, Amjad and McCorry, Patrick and van Moorsel, Aad},
+ title = {Betrayal, Distrust, and Rationality: Smart Counter-Collusion Contracts for Verifiable Cloud Computing},
+ booktitle = {Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security},
+ series = {CCS '17},
+ year = {2017},
+ isbn = {978-1-4503-4946-8},
+ location = {Dallas, Texas, USA},
+ pages = {211--227},
+ numpages = {17},
+ url = {http://doi.acm.org/10.1145/3133956.3134032},
+ doi = {10.1145/3133956.3134032},
+ acmid = {3134032},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {collusion, game theory, smart contract, trust, verifiable computing},
+} 
+
+
+% Verifiable computation, homomorphic encryption
+@inproceedings{Gennaro2010,
+ author = {Gennaro, Rosario and Gentry, Craig and Parno, Bryan},
+ title = {Non-interactive Verifiable Computing: Outsourcing Computation to Untrusted Workers},
+ booktitle = {Proceedings of the 30th Annual Conference on Advances in Cryptology},
+ series = {CRYPTO'10},
+ year = {2010},
+ isbn = {3-642-14622-8, 978-3-642-14622-0},
+ location = {Santa Barbara, CA, USA},
+ pages = {465--482},
+ numpages = {18},
+ url = {http://dl.acm.org/citation.cfm?id=1881412.1881445},
+ acmid = {1881445},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+} 
+
+
+@article{Goldreich,
+ author = {Goldreich, Oded},
+ title = {Probabilistic Proof Systems: A Primer},
+ journal = {Found. Trends Theor. Comput. Sci.},
+ issue_date = {January 2008},
+ volume = {3},
+ number = {1},
+ month = jan,
+ year = {2008},
+ issn = {1551-305X},
+ pages = {1--91},
+ numpages = {91},
+ url = {http://dx.doi.org/10.1561/0400000023},
+ doi = {10.1561/0400000023},
+ acmid = {1454698},
+ publisher = {Now Publishers Inc.},
+ address = {Hanover, MA, USA},
+} 
+
+@article{Sudan,
+ author = {Sudan, Madhu},
+ title = {Probabilistically Checkable Proofs},
+ journal = {Commun. ACM},
+ issue_date = {March 2009},
+ volume = {52},
+ number = {3},
+ month = mar,
+ year = {2009},
+ issn = {0001-0782},
+ pages = {76--84},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/1467247.1467267},
+ doi = {10.1145/1467247.1467267},
+ acmid = {1467267},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+
+
+% verifiable computing, PCP
+@article{Arora1998,
+ author = {Arora, Sanjeev and Lund, Carsten and Motwani, Rajeev and Sudan, Madhu and Szegedy, Mario},
+ title = {Proof Verification and the Hardness of Approximation Problems},
+ journal = {J. ACM},
+ issue_date = {May 1998},
+ volume = {45},
+ number = {3},
+ month = may,
+ year = {1998},
+ issn = {0004-5411},
+ pages = {501--555},
+ numpages = {55},
+ url = {http://doi.acm.org/10.1145/278298.278306},
+ doi = {10.1145/278298.278306},
+ acmid = {278306},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {NP-completeness, optimization, proof verification, randomness},
+} 
+
+@INPROCEEDINGS{Arora1992, 
+author={S. Arora and S. Safra}, 
+booktitle={Proceedings., 33rd Annual Symposium on Foundations of Computer Science}, 
+title={Probabilistic checking of proofs; a new characterization of NP}, 
+year={1992}, 
+volume={}, 
+number={}, 
+pages={2-13}, 
+keywords={computational complexity;formal languages;theorem proving;time complexity;NP;languages;membership proofs;polynomial time;clique;independent set;Polynomials;Marine vehicles;Microwave integrated circuits;NP-complete problem;Cryptography;Protocols;Turing machines}, 
+doi={10.1109/SFCS.1992.267824}, 
+ISSN={}, 
+month={Oct},}
+
+@article{Walfish,
+ author = {Walfish, Michael and Blumberg, Andrew J.},
+ title = {Verifying Computations Without Reexecuting Them},
+ journal = {Commun. ACM},
+ issue_date = {February 2015},
+ volume = {58},
+ number = {2},
+ month = jan,
+ year = {2015},
+ issn = {0001-0782},
+ pages = {74--84},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/2641562},
+ doi = {10.1145/2641562},
+ acmid = {2641562},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@inproceedings{Gentry,
+ author = {Gentry, Craig},
+ title = {Fully Homomorphic Encryption Using Ideal Lattices},
+ booktitle = {Proceedings of the Forty-first Annual ACM Symposium on Theory of Computing},
+ series = {STOC '09},
+ year = {2009},
+ isbn = {978-1-60558-506-2},
+ location = {Bethesda, MD, USA},
+ pages = {169--178},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1536414.1536440},
+ doi = {10.1145/1536414.1536440},
+ acmid = {1536440},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {fully homomorphic encryption},
+} 
+
+@book{Tanenbaum2006,
+ author = {Tanenbaum, Andrew S. and Steen, Maarten van},
+ title = {Distributed Systems: Principles and Paradigms (2Nd Edition)},
+ year = 2006,
+ isbn = 0132392275,
+ publisher = {Prentice-Hall, Inc.},
+ address = {Upper Saddle River, NJ, USA},
+}
+
+@Article{sgx,
+     author    = "Costan, Victor and Devadas, Srinivas",
+     title     = "{Intel SGX Explained}",
+     journal   = "Crypt. Report",
+     year      = "2016",
+     eprint    = "ia.cr/2016/086"
+}
+
+@manual{VTPA,
+ author = "Trusted Computing Group TCG",
+ organisation = "Trusted Computing Group",
+ title = "Virtualized Trusted Platform Architecture Specification",
+ number = "v1r26:2011",
+ year = "2011",
+ month = "June",    
+ note = "Rev. 1.26"
+}
+
+ISO/IEC NP 27070
+Information technology -- Security techniques -- Security requirements for establishing virtualized roots of trust
+
+@misc{ISO27070,
+  organization = {ISO/IEC},
+  title = {ISO/IEC NP 27070 Information Technology -- Security Techniques -- Security requirements for establishing virtualized roots of trust},
+  howpublished = {\url{https://www.iso.org/standard/56571.html}},
+  note = {Accessed: 2018-10-31}
+}
+
+
+@manual{DRTM,
+    organization = "Trusted Computing Group",
+    title = "TCG D-RTM Architecture",
+    number = "1.0.0",
+    year = "2013",
+    month = "June",    
+    note = "Rev. 1"
+}
+
+@misc{TPM20,
+  author = {Trusted Computing Group},
+  organization = {Trusted Computing Group},
+  title = {Trusted Platform Module 2.0 Library Specification},
+  howpublished = {\url{https://trustedcomputinggroup.org/resource/tpm-library-specification/}},
+  note = {Accessed: 2018-10-31},
+  year = {2018}
+}
+
+
+@techreport{TPM12,
+ author = {ISO},
+ Institution = {International Organization for Standardization},
+ address = {Geneva, Switzerland},
+ Title = {Trusted Platform Module Library},
+ number = {ISO/IEC 11889-1:2015},
+ Type = {ISO},
+ Year = {2015}
+}
+
+@article{RA,
+ author = {Coker, George and Guttman, Joshua and Loscocco, Peter and Herzog, Amy and Millen, Jonathan and Hanlon, Brian and Ramsdell, John and Segall, Ariel and Sheehy, Justin and Sniffen, Brian},
+ title = {Principles of Remote Attestation},
+ journal = {Int. J. Inf. Secur.},
+ issue_date = {June 2011},
+ volume = {10},
+ number = {2},
+ month = jun,
+ year = {2011},
+ issn = {1615-5262},
+ pages = {63--81},
+ numpages = {19},
+ url = {http://dx.doi.org/10.1007/s10207-011-0124-7},
+ doi = {10.1007/s10207-011-0124-7},
+ acmid = {1989155},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+ keywords = {Cryptographic protocols, Hardware Security Modules, Operating system security architecture, Strand spaces},
+} 
+
+@inproceedings{Shi2005,
+ author = {Shi, Elaine and Perrig, Adrian and Doorn, Leendert Van},
+ title = {BIND: A Fine-Grained Attestation Service for Secure Distributed Systems},
+ booktitle = {Proceedings of the 2005 IEEE Symposium on Security and Privacy},
+ series = {SP '05},
+ year = {2005},
+ isbn = {0-7695-2339-0},
+ pages = {154--168},
+ numpages = {15},
+ url = {http://dx.doi.org/10.1109/SP.2005.4},
+ doi = {10.1109/SP.2005.4},
+ acmid = {1059388},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+}
+
+@INPROCEEDINGS{Anubis2010, 
+author={S. Buthpitiya and F. T. Sun and H. T. Cheng and P. Tague and M. Griss and A. K. Dey}, 
+booktitle={2010 Sixth International Conference on Intelligent Sensors, Sensor Networks and Information Processing}, 
+title={Anubis: An attestation protocol for distributed context-aware applications}, 
+year={2010}, 
+pages={251-256}, 
+keywords={authorisation;cryptographic protocols;information retrieval;mobile computing;operating systems (computers);peer-to-peer computing;wireless sensor networks;Android Gl based application;Anubis protocol;access control;attestation protocol;confidential information extraction;distributed context-aware application;distributed sensing;private information extraction;remote code attestation;secure Web-browsing;sensitive context information sharing;wireless sensor networks;Authentication;Computational modeling;Context;Protocols;Public key;Servers}, 
+doi={10.1109/ISSNIP.2010.5706749}, 
+month={Dec},}
+
+@ARTICLE{edge, 
+author={W. Shi and J. Cao and Q. Zhang and Y. Li and L. Xu}, 
+journal={IEEE Internet of Things Journal}, 
+title={Edge Computing: Vision and Challenges}, 
+year={2016}, 
+volume={3}, 
+number={5}, 
+pages={637-646}, 
+keywords={Internet of Things;cloud computing;data privacy;smart cities;Internet of Things;bandwidth cost saving;battery life constraint;cloud offloading;cloud services;data privacy;data processing;data safety;edge computing;response time requirement;smart city;smart home;Bandwidth;Cloud computing;Data privacy;Internet of things;Mobile handsets;Smart homes;Time factors;Edge computing;Internet of Things (IoT);smart home and city}, 
+doi={10.1109/JIOT.2016.2579198}, 
+ISSN={2327-4662}, 
+month={Oct},}
+
+@article{cloudview,
+ author = {Armbrust, Michael and Fox, Armando and Griffith, Rean and Joseph, Anthony D. and Katz, Randy and Konwinski, Andy and Lee, Gunho and Patterson, David and Rabkin, Ariel and Stoica, Ion and Zaharia, Matei},
+ title = {A View of Cloud Computing},
+ journal = {Commun. ACM},
+ issue_date = {April 2010},
+ volume = {53},
+ number = {4},
+ month = apr,
+ year = {2010},
+ issn = {0001-0782},
+ pages = {50--58},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/1721654.1721672},
+ doi = {10.1145/1721654.1721672},
+ acmid = {1721672},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% Fog Computing Papers
+
+@inproceedings{fog,
+ author = {Bonomi, Flavio and Milito, Rodolfo and Zhu, Jiang and Addepalli, Sateesh},
+ title = {Fog Computing and Its Role in the Internet of Things},
+ booktitle = {Proceedings of the First Edition of the MCC Workshop on Mobile Cloud Computing},
+ series = {MCC '12},
+ year = {2012},
+ isbn = {978-1-4503-1519-7},
+ location = {Helsinki, Finland},
+ pages = {13--16},
+ numpages = {4},
+ url = {http://doi.acm.org/10.1145/2342509.2342513},
+ doi = {10.1145/2342509.2342513},
+ acmid = {2342513},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {analytics, cloud computing, fog computing, iot, real time systems, software defined networks, wsan},
+}
+
+@ARTICLE{fog1, 
+author={M. Chiang and T. Zhang}, 
+journal={IEEE Internet of Things Journal}, 
+title={Fog and IoT: An Overview of Research Opportunities}, 
+year={2016}, 
+volume={3}, 
+number={6}, 
+pages={854-864}, 
+keywords={5G mobile communication;5G wireless systems;Internet of Things;IoT;embedded artificial intelligence;fifth-generation wireless systems;fog computing;Cloud computing;Computer architecture;Hardware;Internet of things;Security;Edge computing;Internet of Things (IoT);edge networking;edge storage;fog;fog computing;fog control;fog networking;fog storage}, 
+doi={10.1109/JIOT.2016.2584538}, 
+ISSN={2327-4662}, 
+month={Dec},
+}
+
+@inproceedings{fog2,
+ author = {Yi, Shanhe and Li, Cheng and Li, Qun},
+ title = {A Survey of Fog Computing: Concepts, Applications and Issues},
+ booktitle = {Proceedings of the 2015 Workshop on Mobile Big Data},
+ series = {Mobidata '15},
+ year = {2015},
+ isbn = {978-1-4503-3524-9},
+ location = {Hangzhou, China},
+ pages = {37--42},
+ numpages = {6},
+ url = {http://doi.acm.org/10.1145/2757384.2757397},
+ doi = {10.1145/2757384.2757397},
+ acmid = {2757397},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {cloud computing, edge computing, fog computing, mobile cloud computing, mobile edge computing, review},
+}
+
+@ARTICLE{virtiot, 
+author={R. Morabito}, 
+journal={IEEE Access}, 
+title={Virtualization on Internet of Things Edge Devices With Container Technologies: A Performance Evaluation}, 
+year={2017}, 
+volume={5}, 
+number={}, 
+pages={8835-8850}, 
+keywords={Internet of Things;computer network performance evaluation;virtualisation;Internet of Things edge devices;IoT;container-virtualized instances;device virtualization;edge scenarios;low-power devices;single-board computers;Cloud computing;Containers;Hardware;Logic gates;Performance evaluation;Virtualization;Internet of Things;container virtualization;docker;edge computing;performance evaluation}, 
+doi={10.1109/ACCESS.2017.2704444}, 
+ISSN={2169-3536}, 
+month={},
+}
+
+@inproceedings{FuchsIPSJ2011,
+  title={A formal notion of trust--enabling reasoning about security properties},
+  author={Fuchs, Andreas and G{\"u}rgens, Sigrid and Rudolph, Carsten},
+  booktitle={IFIP International Conference on Trust Management},
+  pages={200--215},
+  year={2010},
+  organization={Springer}
+}
+
+@article{edgepromise,
+author = {Weisong Shi and Schahram Dustdar},
+title = {The Promise of Edge Computing},
+journal = {Computer},
+volume = {49},
+number = {5},
+issn = {0018-9162},
+year = {2016},
+pages = {78-81},
+doi = {doi.ieeecomputersociety.org/10.1109/MC.2016.145},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+}
+
+@article{edge2,
+ author = {Garcia Lopez, Pedro and Montresor, Alberto and Epema, Dick and Datta, Anwitaman and Higashino, Teruo and Iamnitchi, Adriana and Barcellos, Marinho and Felber, Pascal and Riviere, Etienne},
+ title = {Edge-centric Computing: Vision and Challenges},
+ journal = {SIGCOMM Comput. Commun. Rev.},
+ issue_date = {October 2015},
+ volume = {45},
+ number = {5},
+ month = sep,
+ year = {2015},
+ issn = {0146-4833},
+ pages = {37--42},
+ numpages = {6},
+ url = {http://doi.acm.org/10.1145/2831347.2831354},
+ doi = {10.1145/2831347.2831354},
+ acmid = {2831354},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {cloud computing, decentralized systems, fog computing, peer-to-peer},
+}
+
+@INPROCEEDINGS{digitaltrust, 
+author={R. N. Akram and R. K. L. Ko}, 
+booktitle={2014 IEEE 13th International Conference on Trust, Security and Privacy in Computing and Communications}, 
+title={Digital Trust - Trusted Computing and Beyond: A Position Paper}, 
+year={2014}, 
+volume={}, 
+number={}, 
+pages={884-892}, 
+keywords={cloud computing;computer network security;data privacy;mobile computing;trusted computing;Internet;TPM specifications;cloud computing;cyberphysical systems;digital resource management;digital trust evolution;heterogeneous domains;interconnected networks;mobile computing;physical societal notions;secure computing;trusted computing;trusted platform module;Computer architecture;Computers;Engines;Mobile communication;Proposals;Security;Semantic Web;Cloud Computing;Cyber-Physical System;Embedded Devices;Provenance;Smart Cards;Trust;Trusted Computing}, 
+doi={10.1109/TrustCom.2014.116}, 
+ISSN={2324-898X}, 
+month={Sept},}
+
+@INPROCEEDINGS{iotsecurity, 
+author={K. Zhao and L. Ge}, 
+booktitle={2013 Ninth International Conference on Computational Intelligence and Security}, 
+title={A Survey on the Internet of Things Security}, 
+year={2013}, 
+pages={663-667}, 
+keywords={Internet of Things;access control;authorisation;computer architecture;computer network security;private key cryptography;routing protocols;sensor fusion;IoT security architecture;IoT security features;access control;authentication;data fusion technology;internet of things security;key algorithm;key management;perception layer;safety measures;security routing protocol;three-layer system structure;Authentication;Computer architecture;Internet;Protocols;Sensors;Wireless sensor networks;Internet of Things;Internet of Things Security;perception layer}, 
+doi={10.1109/CIS.2013.145}, 
+month={Dec},}
+
+@INPROCEEDINGS{iotsecurity2, 
+author={R. Mahmoud and T. Yousuf and F. Aloul and I. Zualkernan}, 
+booktitle={2015 10th International Conference for Internet Technology and Secured Transactions (ICITST)}, 
+title={Internet of things (IoT) security: Current status, challenges and prospective measures}, 
+year={2015}, 
+pages={336-341}, 
+keywords={Internet of Things;computer network security;security of data;wireless LAN;Internet of Things security;IoT security;application layer;network layer;perception layer;three-layer architecture;Encryption;Internet;Protocols;Sensors;Transportation;Wireless sensor networks;Internet of things;IoT;Security}, 
+doi={10.1109/ICITST.2015.7412116}, 
+month={Dec},}
+
+@inproceedings{Sailer2004,
+  title={Design and Implementation of a TCG-based Integrity Measurement Architecture.},
+  author={Sailer, Reiner and Zhang, Xiaolan and Jaeger, Trent and Van Doorn, Leendert},
+  booktitle={USENIX Security Symposium},
+  volume=13,
+  pages={223--238},
+  year=2004
+}
+
+@inproceedings{DAA,
+ author = {Brickell, Ernie and Camenisch, Jan and Chen, Liqun},
+ title = {Direct Anonymous Attestation},
+ booktitle = {Proceedings of the 11th ACM Conference on Computer and Communications Security},
+ series = {CCS '04},
+ year = {2004},
+ isbn = {1-58113-961-6},
+ location = {Washington DC, USA},
+ pages = {132--145},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/1030083.1030103},
+ doi = {10.1145/1030083.1030103},
+ acmid = {1030103},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {anonymous credential systems, cryptographic protocols, integrity based computing, privacy, trusted computing},
+} 
+
+@inproceedings{Klein2009,
+ author = {Klein, Gerwin and Elphinstone, Kevin and Heiser, Gernot and Andronick, June and Cock, David and Derrin, Philip and Elkaduwe, Dhammika and Engelhardt, Kai and Kolanski, Rafal and Norrish, Michael and Sewell, Thomas and Tuch, Harvey and Winwood, Simon},
+ title = {seL4: Formal Verification of an OS Kernel},
+ booktitle = {Proceedings of the ACM SIGOPS 22Nd Symposium on Operating Systems Principles},
+ series = {SOSP '09},
+ year = {2009},
+ isbn = {978-1-60558-752-3},
+ location = {Big Sky, Montana, USA},
+ pages = {207--220},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/1629575.1629596},
+ doi = {10.1145/1629575.1629596},
+ acmid = {1629596},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {isabelle/hol, l4, microkernel, sel4},
+} 
+
+@inproceedings{Lauer2018,
+  title={User-Centered Attestation for Layered and Decentralized Systems},
+  author={Lauer, H. and Rudolph, C. and Salehi S., A. and Nepal, S.},
+  booktitle={Network and Distributed Systems Security (NDSS) Symposium 2018, Workshop on Decentralized IoT Security and Standards (DISS), 18-21 February 2018, San Diego, CA, USA},
+  year=2018,
+  organization={ISOC}
+}
+
+@inproceedings{Lauer2016,
+  title={Hypervisor-Based Attestation of Virtual Environments},
+  author={Lauer, H. and Kuntze, N.},
+  booktitle={Advanced and Trusted Computing (ATC), 2016 Intl IEEE Conferences},
+  pages={333--340},
+  year=2016,
+  organization={IEEE}
+}
+
+@InProceedings{Rowe2016,
+author="Rowe, Paul D.",
+editor="Kordy, Barbara
+and Ekstedt, Mathias
+and Kim, Dong Seong",
+title="Confining Adversary Actions via Measurement",
+booktitle="Graphical Models for Security",
+year="2016",
+publisher="Springer International Publishing",
+address="Cham",
+pages="150--166",
+abstract="Systems designed with measurement and attestation in mind are often layered, with the lower layers measuring the layers above them. Attestations of such systems must report the results of a diverse set of application-specific measurements of various parts of the system. There is a pervasive intuition that measuring the system ``bottom-up'' (i.e. measuring lower layers before the layers above them) is more robust than other orders of measurement. This is the core idea behind trusted boot processes. In this paper we justify this intuition by characterizing the adversary actions required to escape detection by bottom-up measurement. In support of that goal, we introduce a formal framework with a natural and intuitive graphical representation for reasoning about layered measurement systems.",
+isbn="978-3-319-46263-9"
+}
+
+@Inbook{Rowe20162,
+author="Rowe, Paul D.",
+title="Bundling Evidence for Layered Attestation",
+bookTitle="Trust and Trustworthy Computing: 9th International Conference, TRUST 2016, Vienna, Austria, August 29-30, 2016, Proceedings",
+year="2016",
+publisher="Springer International Publishing",
+address="Cham",
+pages="119--139",
+isbn="978-3-319-45572-3",
+doi="10.1007/978-3-319-45572-3_7",
+url="http://dx.doi.org/10.1007/978-3-319-45572-3_7"
+}
+
+@Inbook{Xiu2005,
+author="Xiu, Daoxi
+and Liu, Zhaoyu",
+editor="Zhou, Jianying
+and Lopez, Javier
+and Deng, Robert H.
+and Bao, Feng",
+title="A Formal Definition for Trust in Distributed Systems",
+bookTitle="Information Security: 8th International Conference, ISC 2005, Singapore, September 20-23, 2005. Proceedings",
+year="2005",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="482--489",
+isbn="978-3-540-31930-6",
+doi="10.1007/11556992_35",
+url="http://dx.doi.org/10.1007/11556992_35"
+}
+
+@article{trustlambda,
+ author = {Orbaek, P. and Palsberg, J.},
+ title = {Trust in the Lambda-calculus},
+ journal = {J. Funct. Program.},
+ issue_date = {November 1997},
+ volume = 7,
+ number = 6,
+ month = nov,
+ year = 1997,
+ issn = {0956-7968},
+ pages = {557--591},
+ numpages = 35,
+ url = {http://dx.doi.org/10.1017/S0956796897002906},
+ doi = {10.1017/S0956796897002906},
+ acmid = 969881,
+ publisher = {Cambridge University Press},
+ address = {New York, NY, USA},
+} 
+
+@manual{tmi,
+    organization  = "Trusted Computing Group",
+    title         = "Trusted Multi-Tenant Infrastructure Reference Framework",
+    number        = "v1.00",
+    year          =  2013,
+    month         = 12,
+    note          = "Rev. 1"
+}
+
+@book{TCP,
+ author = {Smith, Sean W.},
+ title = {Trusted Computing Platforms: Design and Applications},
+ year = {2004},
+ isbn = {0387239162},
+ publisher = {Springer-Verlag New York, Inc.},
+ address = {Secaucus, NJ, USA},
+}
+
+@inproceedings{vtpm,
+ author = {Berger, Stefan and C\'{a}ceres, Ram\'{o}n and Goldman, Kenneth A. and Perez, Ronald and Sailer, Reiner and van Doorn, Leendert},
+ title = {vTPM: Virtualizing the Trusted Platform Module},
+ booktitle = {Proceedings of the 15th Conference on USENIX Security Symposium - Volume 15},
+ series = {USENIX-SS'06},
+ year = {2006},
+ location = {Vancouver, B.C., Canada},
+ articleno = {21},
+ url = {http://dl.acm.org/citation.cfm?id=1267336.1267357},
+ acmid = {1267357},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+} 
+
+@book{cryptobook,
+  title={Handbook of applied cryptography},
+  author={Menezes, Alfred J and Van Oorschot, Paul C and Vanstone, Scott A},
+  year={1996},
+  publisher={CRC press}
+}
+
+@article{thambiraja2012survey,
+  title={A survey on various most common encryption techniques},
+  author={Thambiraja, E and Ramesh, G and Umarani, Dr R},
+  journal={International journal of advanced research in computer science and software engineering},
+  volume={2},
+  number={7},
+  year={2012}
+}
+
+@article{rhul,
+  title={Attestation in Trusted Computing: Challenges and Potential Solutions},
+  author={Lee-Thorp, A},
+  journal={Technical report Royal Holloway University of London},
+  number={3},
+  year={2010}
+}
+
+@article{BA,
+  title = {Statistical mechanics of complex networks},
+  author = {Albert, R\'eka and Barab\'asi, Albert-L\'aszl\'o},
+  journal = {Rev. Mod. Phys.},
+  volume = {74},
+  issue = {1},
+  pages = {47--97},
+  numpages = {0},
+  year = {2002},
+  month = {Jan},
+  publisher = {American Physical Society},
+  doi = {10.1103/RevModPhys.74.47},
+  url = {https://link.aps.org/doi/10.1103/RevModPhys.74.47}
+}
+
+@INPROCEEDINGS{AS, 
+author={Qian Chen and Hyunseok Chang and R. Govindan and S. Jamin}, 
+booktitle={Proceedings.Twenty-First Annual Joint Conference of the IEEE Computer and Communications Societies}, 
+title={The origin of power laws in Internet topologies revisited}, 
+year=2002, 
+volume=2, 
+pages={608-617 vol.2}, 
+keywords={Internet;graph theory;network topology;protocols;statistical analysis;BGP;Internet connectivity;Internet topologies;border gateway protocol;dynamic graph models;inter autonomous system topology;power laws;vertex degree distribution;Engineering profession;IP networks;Internet;Network topology;Power engineering and energy;Power measurement;Power system modeling;Routing;Sun;Web server}, 
+doi={10.1109/INFCOM.2002.1019306}, 
+ISSN={0743-166X},}
